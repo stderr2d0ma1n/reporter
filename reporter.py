@@ -25,7 +25,7 @@ tpl = DocxTemplate('template.docx')
 content = {'hosts': []}
 for screen in os.listdir(args.dir):
     if not screen.startswith('.'):
-        host_addr = screen.split('.')[0].replace('_', '.')
+        host_addr = os.path.splitext(screen)[0].replace('_', '.')
         host_poc = InlineImage(tpl, image_descriptor=args.dir + '/' + screen, width=Mm(150))
         content['hosts'].append({
             'host_addr': host_addr,
