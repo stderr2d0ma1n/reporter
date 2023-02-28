@@ -7,7 +7,7 @@ git clone https://github.com/stderr2d0ma1n/reporter
 pip3 install docxtpl
 ```
 ## Usage
-[!] Screenshots in directory must be in format: 10_1_2_3.jpg or 192_168_0_1.png
+[!] Screenshots in directory must be in format: 10_1_2_3.jpg or 192.168.0.1.png
 ```
 python3 reporter.py -t template.docx -d dir_with_pocs -o output.docx
 ```
